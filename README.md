@@ -1,5 +1,5 @@
 # AlohaExperiments
-These are some simulation scripts on aloha and slotted aloha created over OMNet++. These can serve as started scripts for 
+These are some simulation scripts on aloha and slotted aloha created over OMNet++. These can serve as starter scripts for 
 further developments.
 
 Unslotted Aloha simulation:
