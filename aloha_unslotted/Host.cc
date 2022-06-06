@@ -3,6 +3,9 @@
  *
  *  Created on: Jun 4, 2022
  *      Author: dibbendu
+ *      This code simulates the Hosts of an Aloha System. Arrivals are Poisson and whenever there is an arrival, the host tries to transmit.
+ *      If transmissions collide, hosts are informed and the hosts start retransmissions. New Arrivals are discarded unless a retransmission
+ *      is successful.
  */
 
 #include<omnetpp.h>
