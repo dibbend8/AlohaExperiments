@@ -81,9 +81,11 @@ void Host::handleMessage(cMessage *msg){
                 scheduleAt(nextslot, arrival);
             }
         }
-        scheduleAfter(exponential(1.0/arrrate),arrival);
-        //        EV<<"New packet transmit from "<<getIndex()<<" at "<<simTime()<<endl;
-
+        if(!arrival->isScheduled())
+        {
+            scheduleAfter(exponential(1.0/arrrate),arrival);
+                //        EV<<"New packet transmit from "<<getIndex()<<" at "<<simTime()<<endl;
+        }
     }
     if(msg==retransmit)
     {
